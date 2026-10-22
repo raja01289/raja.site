@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSAH Sports PK | Premium Sports Gear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="announcement">⚡ SPECIAL OFFER AT KSAH SPORTS! FREE SHIPPING ALL OVER PAKISTAN</div>
+    <header class="navbar">
+        <div class="logo">KSAH<span>SPORTS</span></div>
+        <div class="nav-icons">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchProducts()">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cart-btn" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">WELCOME TO KSAH SPORTS</span>
+            <h1>UNLEASH YOUR ATHLETIC POTENTIAL</h1>
+            <p>Pakistan's Most Trusted Store for Football Kits & Cleats.</p>
+            <a href="#products" class="btn-primary">Shop Collection</a>
+        </div>
+    </section>
+    <section id="products" class="products-section">
+        <h2 class="section-title">Featured <span>Collection</span></h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Shopping Bag</h3>
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems"><p class="empty-msg">Your bag is empty.</p></div>
+        <div class="cart-footer">
+            <div class="total-row"><span>Total:</span><span id="cartTotal">Rs. 0</span></div>
+            <button class="btn-checkout" onclick="checkoutWhatsApp()"><i class="fab fa-whatsapp"></i> Order via WhatsApp</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
